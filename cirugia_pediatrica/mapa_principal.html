@@ -1,0 +1,2482 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b3891d75640368eb773cf0a7d9c714e8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b3891d75640368eb773cf0a7d9c714e8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b3891d75640368eb773cf0a7d9c714e8 = L.map(
+                "map_b3891d75640368eb773cf0a7d9c714e8",
+                {
+                    center: [23.6345, -102.5528],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_b3891d75640368eb773cf0a7d9c714e8);
+
+            
+
+        
+    
+            var tile_layer_b656a616a72cdaa5fa4ce9bedeb80f0f = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b656a616a72cdaa5fa4ce9bedeb80f0f.addTo(map_b3891d75640368eb773cf0a7d9c714e8);
+        
+    
+            var feature_group_07c2a00df14fbe389196f532a56ef86f = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_4dd9362aa28c19d5cae10bac1a074de2 = L.marker(
+                [19.4184, -99.1526],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_ec74fb9b20265f0e843a649277b2cd7a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0f5440a5a58ac8a7f6120742bc78615f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ee21855596da5516ad780b187cb66cc1 = $(`<div id="html_ee21855596da5516ad780b187cb66cc1" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>Hospital Infantil de México Federico Gómez</b><br>Tipo: Instituto Nacional<br>Sector: Público<br>Estado: CDMX<br>Dir: Dr. Márquez 162<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_0f5440a5a58ac8a7f6120742bc78615f.setContent(html_ee21855596da5516ad780b187cb66cc1);
+            
+        
+
+        marker_4dd9362aa28c19d5cae10bac1a074de2.bindPopup(popup_0f5440a5a58ac8a7f6120742bc78615f)
+        ;
+
+        
+    
+    
+            marker_4dd9362aa28c19d5cae10bac1a074de2.bindTooltip(
+                `<div>
+                     Hospital Infantil de México Federico Gómez
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4dd9362aa28c19d5cae10bac1a074de2.setIcon(icon_ec74fb9b20265f0e843a649277b2cd7a);
+            
+    
+            var marker_52702e9d72140dbcf007241ca4390532 = L.marker(
+                [19.3012, -99.1711],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_2268282b81179af59458ceca05891d4d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e0369277ac74523899b5b4cc72df7c29 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_63effdf9de3b67a6da60f22d80198d7a = $(`<div id="html_63effdf9de3b67a6da60f22d80198d7a" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>Instituto Nacional de Pediatría</b><br>Tipo: Instituto Nacional<br>Sector: Público<br>Estado: CDMX<br>Dir: Insurgentes Sur 3700-C<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_e0369277ac74523899b5b4cc72df7c29.setContent(html_63effdf9de3b67a6da60f22d80198d7a);
+            
+        
+
+        marker_52702e9d72140dbcf007241ca4390532.bindPopup(popup_e0369277ac74523899b5b4cc72df7c29)
+        ;
+
+        
+    
+    
+            marker_52702e9d72140dbcf007241ca4390532.bindTooltip(
+                `<div>
+                     Instituto Nacional de Pediatría
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_52702e9d72140dbcf007241ca4390532.setIcon(icon_2268282b81179af59458ceca05891d4d);
+            
+    
+            var marker_6775774b124a1f4725c50dd91a92c6e7 = L.marker(
+                [19.4113, -99.1528],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_fd7d6944f0c6675e0b7bbe99648cac0a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d28a4563dcc6f5c871aaad9ab372c5ef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5a29e3b077a070ed5ad3851202d19eee = $(`<div id="html_5a29e3b077a070ed5ad3851202d19eee" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>Hosp. Gral. México Dr. E. Liceaga</b><br>Tipo: Hospital Federal<br>Sector: Público<br>Estado: CDMX<br>Dir: Dr. Balmis 148<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_d28a4563dcc6f5c871aaad9ab372c5ef.setContent(html_5a29e3b077a070ed5ad3851202d19eee);
+            
+        
+
+        marker_6775774b124a1f4725c50dd91a92c6e7.bindPopup(popup_d28a4563dcc6f5c871aaad9ab372c5ef)
+        ;
+
+        
+    
+    
+            marker_6775774b124a1f4725c50dd91a92c6e7.bindTooltip(
+                `<div>
+                     Hosp. Gral. México Dr. E. Liceaga
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6775774b124a1f4725c50dd91a92c6e7.setIcon(icon_fd7d6944f0c6675e0b7bbe99648cac0a);
+            
+    
+            var marker_1e1d9463871fbc3be979cc0c8d8919d8 = L.marker(
+                [19.3189, -98.8861],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_a469991b67f3c5fda86c72d35e4f95e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_64c3e1cd395b0ee59fa797417ace5509 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1963142740038f46d44b8af3aca99fdd = $(`<div id="html_1963142740038f46d44b8af3aca99fdd" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>HRAE Ixtapaluca</b><br>Tipo: Alta Especialidad<br>Sector: Público<br>Estado: Edo.Méx.<br>Dir: Carr. Méx-Puebla Km34.5<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_64c3e1cd395b0ee59fa797417ace5509.setContent(html_1963142740038f46d44b8af3aca99fdd);
+            
+        
+
+        marker_1e1d9463871fbc3be979cc0c8d8919d8.bindPopup(popup_64c3e1cd395b0ee59fa797417ace5509)
+        ;
+
+        
+    
+    
+            marker_1e1d9463871fbc3be979cc0c8d8919d8.bindTooltip(
+                `<div>
+                     HRAE Ixtapaluca
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1e1d9463871fbc3be979cc0c8d8919d8.setIcon(icon_a469991b67f3c5fda86c72d35e4f95e9);
+            
+    
+            var marker_12cf1a0bd1ab2ee5d7db6d7f0762b718 = L.marker(
+                [14.889, -92.2668],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_a2f9f06f070da3105bbdf4ef5e0e1dd1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5515dd24a4fdb1a34d7bb180b8c26589 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_acd50ab19a70c3819a74bddcec20997e = $(`<div id="html_acd50ab19a70c3819a74bddcec20997e" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>HRAE Tapachula Ped.</b><br>Tipo: Alta Especialidad<br>Sector: Público<br>Estado: Chiapas<br>Dir: Ciudad Salud<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_5515dd24a4fdb1a34d7bb180b8c26589.setContent(html_acd50ab19a70c3819a74bddcec20997e);
+            
+        
+
+        marker_12cf1a0bd1ab2ee5d7db6d7f0762b718.bindPopup(popup_5515dd24a4fdb1a34d7bb180b8c26589)
+        ;
+
+        
+    
+    
+            marker_12cf1a0bd1ab2ee5d7db6d7f0762b718.bindTooltip(
+                `<div>
+                     HRAE Tapachula Ped.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_12cf1a0bd1ab2ee5d7db6d7f0762b718.setIcon(icon_a2f9f06f070da3105bbdf4ef5e0e1dd1);
+            
+    
+            var marker_94581079acaf75564cf80f1865c7582f = L.marker(
+                [19.1738, -96.1342],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_03f301027f17dc634279603b9787bea4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db4184784ab2ea1c70721f49318afc1c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2f9f1b67a6758bf5d2dd08361bac0e9a = $(`<div id="html_2f9f1b67a6758bf5d2dd08361bac0e9a" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>HRAE Veracruz</b><br>Tipo: Alta Especialidad<br>Sector: Público<br>Estado: Veracruz<br>Dir: 20 de Noviembre 1074<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_db4184784ab2ea1c70721f49318afc1c.setContent(html_2f9f1b67a6758bf5d2dd08361bac0e9a);
+            
+        
+
+        marker_94581079acaf75564cf80f1865c7582f.bindPopup(popup_db4184784ab2ea1c70721f49318afc1c)
+        ;
+
+        
+    
+    
+            marker_94581079acaf75564cf80f1865c7582f.bindTooltip(
+                `<div>
+                     HRAE Veracruz
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_94581079acaf75564cf80f1865c7582f.setIcon(icon_03f301027f17dc634279603b9787bea4);
+            
+    
+            var marker_9b4390e7e7482c700f32ac4d2781c363 = L.marker(
+                [23.7175, -99.1707],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_eee21eef596fea9a069ab47724a10ce3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_be5dc5df216f96b7a26f60a57103c0d1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1be26efa0bd54d72447b0b140e726861 = $(`<div id="html_1be26efa0bd54d72447b0b140e726861" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>HRAE Bicentenario Cd. Victoria</b><br>Tipo: Alta Especialidad<br>Sector: Público<br>Estado: Tamaulipas<br>Dir: Lib. Naciones Unidas 6501<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_be5dc5df216f96b7a26f60a57103c0d1.setContent(html_1be26efa0bd54d72447b0b140e726861);
+            
+        
+
+        marker_9b4390e7e7482c700f32ac4d2781c363.bindPopup(popup_be5dc5df216f96b7a26f60a57103c0d1)
+        ;
+
+        
+    
+    
+            marker_9b4390e7e7482c700f32ac4d2781c363.bindTooltip(
+                `<div>
+                     HRAE Bicentenario Cd. Victoria
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9b4390e7e7482c700f32ac4d2781c363.setIcon(icon_eee21eef596fea9a069ab47724a10ce3);
+            
+    
+            var marker_ab195fc612949b46b8867771cfd3c1f1 = L.marker(
+                [21.019, -89.596],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_aabdddde3a56939526e984e8f1da2744 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c5641ae93df13599329e31eeb0d156cc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f719cbd27a2c8db93661332c8239d632 = $(`<div id="html_f719cbd27a2c8db93661332c8239d632" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>HRAE Península Yucatán</b><br>Tipo: Alta Especialidad<br>Sector: Público<br>Estado: Yucatán<br>Dir: Calle 7 No.433 Altabrisa<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_c5641ae93df13599329e31eeb0d156cc.setContent(html_f719cbd27a2c8db93661332c8239d632);
+            
+        
+
+        marker_ab195fc612949b46b8867771cfd3c1f1.bindPopup(popup_c5641ae93df13599329e31eeb0d156cc)
+        ;
+
+        
+    
+    
+            marker_ab195fc612949b46b8867771cfd3c1f1.bindTooltip(
+                `<div>
+                     HRAE Península Yucatán
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ab195fc612949b46b8867771cfd3c1f1.setIcon(icon_aabdddde3a56939526e984e8f1da2744);
+            
+    
+            var marker_bcb57b7c482d6320e1ab66250653f28f = L.marker(
+                [19.417, -99.1537],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_c39f11e929bc7d53fe0e38b490bd6760 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_25e4c4c7856d369ff077c2bb9cb4fccd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_94a1ee1b949faa16dfc863626255fe45 = $(`<div id="html_94a1ee1b949faa16dfc863626255fe45" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>UMAE Ped. CMN Siglo XXI</b><br>Tipo: IMSS-UMAE<br>Sector: Público<br>Estado: CDMX<br>Dir: Cuauhtémoc 330<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_25e4c4c7856d369ff077c2bb9cb4fccd.setContent(html_94a1ee1b949faa16dfc863626255fe45);
+            
+        
+
+        marker_bcb57b7c482d6320e1ab66250653f28f.bindPopup(popup_25e4c4c7856d369ff077c2bb9cb4fccd)
+        ;
+
+        
+    
+    
+            marker_bcb57b7c482d6320e1ab66250653f28f.bindTooltip(
+                `<div>
+                     UMAE Ped. CMN Siglo XXI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bcb57b7c482d6320e1ab66250653f28f.setIcon(icon_c39f11e929bc7d53fe0e38b490bd6760);
+            
+    
+            var marker_3470e81088bd7d9fb25db13464e324d9 = L.marker(
+                [19.4695, -99.1529],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_b8a137e9b75e0c763b784da24f94f5c6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_72873a90f6f34ab8c5007483ba3c427d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9b579f4e7d969fb8728fb9222e7199c7 = $(`<div id="html_9b579f4e7d969fb8728fb9222e7199c7" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>UMAE Gral. La Raza Div.Ped.Qx</b><br>Tipo: IMSS-UMAE<br>Sector: Público<br>Estado: CDMX<br>Dir: Calz.Vallejo y Jacarandas<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_72873a90f6f34ab8c5007483ba3c427d.setContent(html_9b579f4e7d969fb8728fb9222e7199c7);
+            
+        
+
+        marker_3470e81088bd7d9fb25db13464e324d9.bindPopup(popup_72873a90f6f34ab8c5007483ba3c427d)
+        ;
+
+        
+    
+    
+            marker_3470e81088bd7d9fb25db13464e324d9.bindTooltip(
+                `<div>
+                     UMAE Gral. La Raza Div.Ped.Qx
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3470e81088bd7d9fb25db13464e324d9.setIcon(icon_b8a137e9b75e0c763b784da24f94f5c6);
+            
+    
+            var marker_f236328636bdcdcd5b9a96fcd1bd254f = L.marker(
+                [20.672, -103.338],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_2b3e9580031523feccb41b91abcb4909 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_43d21e3ea94f55b8e2e82180a62542d0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f1e1b1dde33a40fd9be7d173982efb23 = $(`<div id="html_f1e1b1dde33a40fd9be7d173982efb23" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>UMAE Ped. CMN Occidente</b><br>Tipo: IMSS-UMAE<br>Sector: Público<br>Estado: Jalisco<br>Dir: B.Domínguez 735<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_43d21e3ea94f55b8e2e82180a62542d0.setContent(html_f1e1b1dde33a40fd9be7d173982efb23);
+            
+        
+
+        marker_f236328636bdcdcd5b9a96fcd1bd254f.bindPopup(popup_43d21e3ea94f55b8e2e82180a62542d0)
+        ;
+
+        
+    
+    
+            marker_f236328636bdcdcd5b9a96fcd1bd254f.bindTooltip(
+                `<div>
+                     UMAE Ped. CMN Occidente
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f236328636bdcdcd5b9a96fcd1bd254f.setIcon(icon_2b3e9580031523feccb41b91abcb4909);
+            
+    
+            var marker_f68207dbe8f8074b1c4f29366b8c3214 = L.marker(
+                [25.75, -100.315],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_67536fca6cecb9d4fa5ab37c4531bf53 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5be93cb60688e0e132572490cb7ac23c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6f70e1cd34f14de5f5c9db624fac0b2a = $(`<div id="html_6f70e1cd34f14de5f5c9db624fac0b2a" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>UMAE Esp.25 CMN Noreste</b><br>Tipo: IMSS-UMAE<br>Sector: Público<br>Estado: N.León<br>Dir: Lincoln y F.Velázquez<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_5be93cb60688e0e132572490cb7ac23c.setContent(html_6f70e1cd34f14de5f5c9db624fac0b2a);
+            
+        
+
+        marker_f68207dbe8f8074b1c4f29366b8c3214.bindPopup(popup_5be93cb60688e0e132572490cb7ac23c)
+        ;
+
+        
+    
+    
+            marker_f68207dbe8f8074b1c4f29366b8c3214.bindTooltip(
+                `<div>
+                     UMAE Esp.25 CMN Noreste
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f68207dbe8f8074b1c4f29366b8c3214.setIcon(icon_67536fca6cecb9d4fa5ab37c4531bf53);
+            
+    
+            var marker_fbc47795f731f3de30245c89a8428b70 = L.marker(
+                [21.12, -101.659],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_4f988df04c5766c8c8cfd6c71b9fd09a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1bfab933d9ad50d12577b7c942274176 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c30d6a0270c90f82512edc0d7f7d7fd8 = $(`<div id="html_c30d6a0270c90f82512edc0d7f7d7fd8" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>UMAE GinecoPed.48 León</b><br>Tipo: IMSS-UMAE<br>Sector: Público<br>Estado: Guanajuato<br>Dir: López Mateos esq Insurgentes<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_1bfab933d9ad50d12577b7c942274176.setContent(html_c30d6a0270c90f82512edc0d7f7d7fd8);
+            
+        
+
+        marker_fbc47795f731f3de30245c89a8428b70.bindPopup(popup_1bfab933d9ad50d12577b7c942274176)
+        ;
+
+        
+    
+    
+            marker_fbc47795f731f3de30245c89a8428b70.bindTooltip(
+                `<div>
+                     UMAE GinecoPed.48 León
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fbc47795f731f3de30245c89a8428b70.setIcon(icon_4f988df04c5766c8c8cfd6c71b9fd09a);
+            
+    
+            var marker_210af0fbad1bcf8e32c39590dd24f7f6 = L.marker(
+                [19.037, -98.208],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_ae6dfa280f7278fa0e46bfc3d3862e18 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fa974b4819643e9e006cdf7fda10677f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bd7566ddbcf2b4af38a9fc3999b2f803 = $(`<div id="html_bd7566ddbcf2b4af38a9fc3999b2f803" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>UMAE Esp. CMN Puebla</b><br>Tipo: IMSS-UMAE<br>Sector: Público<br>Estado: Puebla<br>Dir: 2 Poniente 1101<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_fa974b4819643e9e006cdf7fda10677f.setContent(html_bd7566ddbcf2b4af38a9fc3999b2f803);
+            
+        
+
+        marker_210af0fbad1bcf8e32c39590dd24f7f6.bindPopup(popup_fa974b4819643e9e006cdf7fda10677f)
+        ;
+
+        
+    
+    
+            marker_210af0fbad1bcf8e32c39590dd24f7f6.bindTooltip(
+                `<div>
+                     UMAE Esp. CMN Puebla
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_210af0fbad1bcf8e32c39590dd24f7f6.setIcon(icon_ae6dfa280f7278fa0e46bfc3d3862e18);
+            
+    
+            var marker_d9d74dd1a7cdfc87f49dc0e93b6348e8 = L.marker(
+                [19.374, -99.169],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_c913e11b3aced0892e57daf54953545b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c78c779012c014bc600c5f2f83828300 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e4ffd770cc0045669bbd30c619c7e672 = $(`<div id="html_e4ffd770cc0045669bbd30c619c7e672" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>CMN 20 Nov ISSSTE</b><br>Tipo: ISSSTE<br>Sector: Público<br>Estado: CDMX<br>Dir: Félix Cuevas 540<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_c78c779012c014bc600c5f2f83828300.setContent(html_e4ffd770cc0045669bbd30c619c7e672);
+            
+        
+
+        marker_d9d74dd1a7cdfc87f49dc0e93b6348e8.bindPopup(popup_c78c779012c014bc600c5f2f83828300)
+        ;
+
+        
+    
+    
+            marker_d9d74dd1a7cdfc87f49dc0e93b6348e8.bindTooltip(
+                `<div>
+                     CMN 20 Nov ISSSTE
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d9d74dd1a7cdfc87f49dc0e93b6348e8.setIcon(icon_c913e11b3aced0892e57daf54953545b);
+            
+    
+            var marker_91e0caf192ba128cebe10ba02143130d = L.marker(
+                [19.356, -99.177],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_1a6d1dfbbb4b49d9981d5f125fde934b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1ba5ae1ae1cd98571349444ae762f76d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9ebb2d98bef5bf2d0fb7aad0aae4dd83 = $(`<div id="html_9ebb2d98bef5bf2d0fb7aad0aae4dd83" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>Hosp.Reg. López Mateos ISSSTE</b><br>Tipo: ISSSTE<br>Sector: Público<br>Estado: CDMX<br>Dir: Universidad 1321<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_1ba5ae1ae1cd98571349444ae762f76d.setContent(html_9ebb2d98bef5bf2d0fb7aad0aae4dd83);
+            
+        
+
+        marker_91e0caf192ba128cebe10ba02143130d.bindPopup(popup_1ba5ae1ae1cd98571349444ae762f76d)
+        ;
+
+        
+    
+    
+            marker_91e0caf192ba128cebe10ba02143130d.bindTooltip(
+                `<div>
+                     Hosp.Reg. López Mateos ISSSTE
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_91e0caf192ba128cebe10ba02143130d.setIcon(icon_1a6d1dfbbb4b49d9981d5f125fde934b);
+            
+    
+            var marker_da37b07023dad9704aaa9c4ec2f61d13 = L.marker(
+                [19.437, -99.102],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_3e84bca74437d4fad82e0b6fb0e9d538 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_086b4ca39a5124844edaa714112f8d59 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cd964ffe9fce0566ff65aa12d2d214ca = $(`<div id="html_cd964ffe9fce0566ff65aa12d2d214ca" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>Ped. Moctezuma SEDESA</b><br>Tipo: SS Estatal<br>Sector: Público<br>Estado: CDMX<br>Dir: Oriente 158 No.189<br>Nivel: 2do<br>Sede formación: Sí</div></div>`)[0];
+                popup_086b4ca39a5124844edaa714112f8d59.setContent(html_cd964ffe9fce0566ff65aa12d2d214ca);
+            
+        
+
+        marker_da37b07023dad9704aaa9c4ec2f61d13.bindPopup(popup_086b4ca39a5124844edaa714112f8d59)
+        ;
+
+        
+    
+    
+            marker_da37b07023dad9704aaa9c4ec2f61d13.bindTooltip(
+                `<div>
+                     Ped. Moctezuma SEDESA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_da37b07023dad9704aaa9c4ec2f61d13.setIcon(icon_3e84bca74437d4fad82e0b6fb0e9d538);
+            
+    
+            var marker_afcac80abc79dcd81771f1379e479789 = L.marker(
+                [19.388, -99.095],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_669b19567dda256a9588877bf23f4561 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_542a39d11d4a289864b63d6799a314ca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a286fb058237858a70ee412c3173c42b = $(`<div id="html_a286fb058237858a70ee412c3173c42b" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>Ped. Iztacalco SEDESA</b><br>Tipo: SS Estatal<br>Sector: Público<br>Estado: CDMX<br>Dir: Terraplén Río Frío s/n<br>Nivel: 2do<br>Sede formación: Sí</div></div>`)[0];
+                popup_542a39d11d4a289864b63d6799a314ca.setContent(html_a286fb058237858a70ee412c3173c42b);
+            
+        
+
+        marker_afcac80abc79dcd81771f1379e479789.bindPopup(popup_542a39d11d4a289864b63d6799a314ca)
+        ;
+
+        
+    
+    
+            marker_afcac80abc79dcd81771f1379e479789.bindTooltip(
+                `<div>
+                     Ped. Iztacalco SEDESA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_afcac80abc79dcd81771f1379e479789.setIcon(icon_669b19567dda256a9588877bf23f4561);
+            
+    
+            var marker_b9690036b6f170f0c9fdee4303bf3e3f = L.marker(
+                [19.483, -99.121],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_7716476065097c8575f76053565d699f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9de7bf9ab289bc0c512f832c2cfeba5e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ef40f9efdaa5f8e7cc1cf3516142e319 = $(`<div id="html_ef40f9efdaa5f8e7cc1cf3516142e319" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>Ped. La Villa SEDESA</b><br>Tipo: SS Estatal<br>Sector: Público<br>Estado: CDMX<br>Dir: Insurgentes Nte y Misterios<br>Nivel: 2do<br>Sede formación: No</div></div>`)[0];
+                popup_9de7bf9ab289bc0c512f832c2cfeba5e.setContent(html_ef40f9efdaa5f8e7cc1cf3516142e319);
+            
+        
+
+        marker_b9690036b6f170f0c9fdee4303bf3e3f.bindPopup(popup_9de7bf9ab289bc0c512f832c2cfeba5e)
+        ;
+
+        
+    
+    
+            marker_b9690036b6f170f0c9fdee4303bf3e3f.bindTooltip(
+                `<div>
+                     Ped. La Villa SEDESA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b9690036b6f170f0c9fdee4303bf3e3f.setIcon(icon_7716476065097c8575f76053565d699f);
+            
+    
+            var marker_f5023a864e0d656a2916739235ef301f = L.marker(
+                [19.355, -99.056],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_06aa4fb7fd901601465889554f79f020 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e84f94513972a05b07881ca8a4c0264b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ede097260fc4c5c35f804cb3450f01ab = $(`<div id="html_ede097260fc4c5c35f804cb3450f01ab" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>Ped. Iztapalapa SEDESA</b><br>Tipo: SS Estatal<br>Sector: Público<br>Estado: CDMX<br>Dir: Ermita Iztapalapa s/n<br>Nivel: 2do<br>Sede formación: No</div></div>`)[0];
+                popup_e84f94513972a05b07881ca8a4c0264b.setContent(html_ede097260fc4c5c35f804cb3450f01ab);
+            
+        
+
+        marker_f5023a864e0d656a2916739235ef301f.bindPopup(popup_e84f94513972a05b07881ca8a4c0264b)
+        ;
+
+        
+    
+    
+            marker_f5023a864e0d656a2916739235ef301f.bindTooltip(
+                `<div>
+                     Ped. Iztapalapa SEDESA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f5023a864e0d656a2916739235ef301f.setIcon(icon_06aa4fb7fd901601465889554f79f020);
+            
+    
+            var marker_76a4630c411138919faf37c5cddcda2b = L.marker(
+                [20.659, -103.35],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_68cc36f3b4165195f15fe76eccefb922 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7973ef5da24f9eb91a19e51328d138b3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_429bb9da65d23ee189256a50f655149d = $(`<div id="html_429bb9da65d23ee189256a50f655149d" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>Civil GDL Dr. J.I. Menchaca</b><br>Tipo: Hospital Civil<br>Sector: Público<br>Estado: Jalisco<br>Dir: S. Quevedo y Zubieta 750<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_7973ef5da24f9eb91a19e51328d138b3.setContent(html_429bb9da65d23ee189256a50f655149d);
+            
+        
+
+        marker_76a4630c411138919faf37c5cddcda2b.bindPopup(popup_7973ef5da24f9eb91a19e51328d138b3)
+        ;
+
+        
+    
+    
+            marker_76a4630c411138919faf37c5cddcda2b.bindTooltip(
+                `<div>
+                     Civil GDL Dr. J.I. Menchaca
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_76a4630c411138919faf37c5cddcda2b.setIcon(icon_68cc36f3b4165195f15fe76eccefb922);
+            
+    
+            var marker_6ddf977470bcf1dc20021476a8481962 = L.marker(
+                [20.678, -103.352],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_c672810f5f0fd70af5c9abf87ba6003b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d357df9c74125379b3a0d058f7da6920 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_608aed3ea4ae66daf39394e8593aed21 = $(`<div id="html_608aed3ea4ae66daf39394e8593aed21" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>Civil GDL Fray A. Alcalde</b><br>Tipo: Hospital Civil<br>Sector: Público<br>Estado: Jalisco<br>Dir: Hospital 278 El Retiro<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_d357df9c74125379b3a0d058f7da6920.setContent(html_608aed3ea4ae66daf39394e8593aed21);
+            
+        
+
+        marker_6ddf977470bcf1dc20021476a8481962.bindPopup(popup_d357df9c74125379b3a0d058f7da6920)
+        ;
+
+        
+    
+    
+            marker_6ddf977470bcf1dc20021476a8481962.bindTooltip(
+                `<div>
+                     Civil GDL Fray A. Alcalde
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6ddf977470bcf1dc20021476a8481962.setIcon(icon_c672810f5f0fd70af5c9abf87ba6003b);
+            
+    
+            var marker_c0d5acd425e822923fe059e23f105765 = L.marker(
+                [19.293, -99.636],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_67a6eff2c0910829c0d57fbec6f72ce9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9f624f128394fc793c89a013b90b306e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fb769b3b6e802d44a4ba82bb1632d152 = $(`<div id="html_fb769b3b6e802d44a4ba82bb1632d152" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>Hosp. Niño IMIEM Toluca</b><br>Tipo: SS Estatal<br>Sector: Público<br>Estado: Edo.Méx.<br>Dir: Solidaridad Las Torres 101<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_9f624f128394fc793c89a013b90b306e.setContent(html_fb769b3b6e802d44a4ba82bb1632d152);
+            
+        
+
+        marker_c0d5acd425e822923fe059e23f105765.bindPopup(popup_9f624f128394fc793c89a013b90b306e)
+        ;
+
+        
+    
+    
+            marker_c0d5acd425e822923fe059e23f105765.bindTooltip(
+                `<div>
+                     Hosp. Niño IMIEM Toluca
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c0d5acd425e822923fe059e23f105765.setIcon(icon_67a6eff2c0910829c0d57fbec6f72ce9);
+            
+    
+            var marker_c6c74de299fa8a67691c4e3ef4b1d74b = L.marker(
+                [18.938, -99.251],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_d19d67ab69d6b595f26383e8328d5ade = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c37583ea9ae0c273691e78ee0549df96 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1eb5881448ee25b76e6fd2b6e7609aad = $(`<div id="html_1eb5881448ee25b76e6fd2b6e7609aad" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>Hosp. Niño Morelense</b><br>Tipo: SS Estatal<br>Sector: Público<br>Estado: Morelos<br>Dir: G.Gómez Azcárate 205<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_c37583ea9ae0c273691e78ee0549df96.setContent(html_1eb5881448ee25b76e6fd2b6e7609aad);
+            
+        
+
+        marker_c6c74de299fa8a67691c4e3ef4b1d74b.bindPopup(popup_c37583ea9ae0c273691e78ee0549df96)
+        ;
+
+        
+    
+    
+            marker_c6c74de299fa8a67691c4e3ef4b1d74b.bindTooltip(
+                `<div>
+                     Hosp. Niño Morelense
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c6c74de299fa8a67691c4e3ef4b1d74b.setIcon(icon_d19d67ab69d6b595f26383e8328d5ade);
+            
+    
+            var marker_2593cff822ced01738b43aa0dc78440e = L.marker(
+                [19.043, -98.216],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_6caa09644aa0b5fab57a8a8bbf12017c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e3ce8670e6bfc25e100faad92aba4d04 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fac7e15e82430f274b1de529dd3b1ef5 = $(`<div id="html_fac7e15e82430f274b1de529dd3b1ef5" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>Hosp. Niño Poblano</b><br>Tipo: SS Estatal<br>Sector: Público<br>Estado: Puebla<br>Dir: 19 Poniente 1301<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_e3ce8670e6bfc25e100faad92aba4d04.setContent(html_fac7e15e82430f274b1de529dd3b1ef5);
+            
+        
+
+        marker_2593cff822ced01738b43aa0dc78440e.bindPopup(popup_e3ce8670e6bfc25e100faad92aba4d04)
+        ;
+
+        
+    
+    
+            marker_2593cff822ced01738b43aa0dc78440e.bindTooltip(
+                `<div>
+                     Hosp. Niño Poblano
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2593cff822ced01738b43aa0dc78440e.setIcon(icon_6caa09644aa0b5fab57a8a8bbf12017c);
+            
+    
+            var marker_3379cf6611c4f5d70d350ae77e17ab3a = L.marker(
+                [17.061, -96.693],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_935453730cdf31d18410ab5e66c26bb0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9d739df10b18682ca89938eb823f6804 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e3c3f2cb9f349a2b8592829d386e0735 = $(`<div id="html_e3c3f2cb9f349a2b8592829d386e0735" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>Hosp. Niño y Mujer Oaxaqueña</b><br>Tipo: SS Estatal<br>Sector: Público<br>Estado: Oaxaca<br>Dir: Símbolos Patrios 1003<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_9d739df10b18682ca89938eb823f6804.setContent(html_e3c3f2cb9f349a2b8592829d386e0735);
+            
+        
+
+        marker_3379cf6611c4f5d70d350ae77e17ab3a.bindPopup(popup_9d739df10b18682ca89938eb823f6804)
+        ;
+
+        
+    
+    
+            marker_3379cf6611c4f5d70d350ae77e17ab3a.bindTooltip(
+                `<div>
+                     Hosp. Niño y Mujer Oaxaqueña
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3379cf6611c4f5d70d350ae77e17ab3a.setIcon(icon_935453730cdf31d18410ab5e66c26bb0);
+            
+    
+            var marker_ffeaf79fca58659ed74ac983f9639ed1 = L.marker(
+                [22.143, -100.955],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_a767b3c9a50a44db3860dc7beb0e1cc0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0f6123a31d199f33fba28bb6541df070 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ca6a1393d96bff60e0d7cf605290e067 = $(`<div id="html_ca6a1393d96bff60e0d7cf605290e067" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>Hosp. Central Morones Prieto</b><br>Tipo: SS Estatal<br>Sector: Público<br>Estado: SLP<br>Dir: V. Carranza 2395<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_0f6123a31d199f33fba28bb6541df070.setContent(html_ca6a1393d96bff60e0d7cf605290e067);
+            
+        
+
+        marker_ffeaf79fca58659ed74ac983f9639ed1.bindPopup(popup_0f6123a31d199f33fba28bb6541df070)
+        ;
+
+        
+    
+    
+            marker_ffeaf79fca58659ed74ac983f9639ed1.bindTooltip(
+                `<div>
+                     Hosp. Central Morones Prieto
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ffeaf79fca58659ed74ac983f9639ed1.setIcon(icon_a767b3c9a50a44db3860dc7beb0e1cc0);
+            
+    
+            var marker_8f9d8b4b82a0e735c593c563027a60d7 = L.marker(
+                [24.805, -107.394],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_65f1eca3b8db8a24e618dab74b3c5a1e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e4d8408c3d0c45484b77be1e57141264 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_55c6f2c20c5d66d8487a2970e89ac328 = $(`<div id="html_55c6f2c20c5d66d8487a2970e89ac328" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>Ped. Sinaloa Dr. R. Aguilar</b><br>Tipo: SS Estatal<br>Sector: Público<br>Estado: Sinaloa<br>Dir: Blvd. Constitución s/n<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_e4d8408c3d0c45484b77be1e57141264.setContent(html_55c6f2c20c5d66d8487a2970e89ac328);
+            
+        
+
+        marker_8f9d8b4b82a0e735c593c563027a60d7.bindPopup(popup_e4d8408c3d0c45484b77be1e57141264)
+        ;
+
+        
+    
+    
+            marker_8f9d8b4b82a0e735c593c563027a60d7.bindTooltip(
+                `<div>
+                     Ped. Sinaloa Dr. R. Aguilar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8f9d8b4b82a0e735c593c563027a60d7.setIcon(icon_65f1eca3b8db8a24e618dab74b3c5a1e);
+            
+    
+            var marker_d4bf61d0e1e528e2a27f0d83c16354d8 = L.marker(
+                [29.1, -110.97],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_34b765f21c5663ff21c6d0ec7192484e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b3cbe4a3d3f4715f347421b64b7690a9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_931ce61d48c160816111252c0f696925 = $(`<div id="html_931ce61d48c160816111252c0f696925" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>Infantil Edo. Sonora</b><br>Tipo: SS Estatal<br>Sector: Público<br>Estado: Sonora<br>Dir: Reforma 355 Norte<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_b3cbe4a3d3f4715f347421b64b7690a9.setContent(html_931ce61d48c160816111252c0f696925);
+            
+        
+
+        marker_d4bf61d0e1e528e2a27f0d83c16354d8.bindPopup(popup_b3cbe4a3d3f4715f347421b64b7690a9)
+        ;
+
+        
+    
+    
+            marker_d4bf61d0e1e528e2a27f0d83c16354d8.bindTooltip(
+                `<div>
+                     Infantil Edo. Sonora
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d4bf61d0e1e528e2a27f0d83c16354d8.setIcon(icon_34b765f21c5663ff21c6d0ec7192484e);
+            
+    
+            var marker_dd2617e250819bcdf194dd018e2681f9 = L.marker(
+                [28.627, -106.093],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_844e32a57a0b79c8b7b73d3c9bfde93d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_85d6d17a259ba669ff63c36d3ec935d2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_228427ddc7260ceeeae4f55130f1ef9b = $(`<div id="html_228427ddc7260ceeeae4f55130f1ef9b" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>Infantil Chihuahua</b><br>Tipo: SS Estatal<br>Sector: Público<br>Estado: Chihuahua<br>Dir: Av. Pacheco y Progreso<br>Nivel: 2do<br>Sede formación: No</div></div>`)[0];
+                popup_85d6d17a259ba669ff63c36d3ec935d2.setContent(html_228427ddc7260ceeeae4f55130f1ef9b);
+            
+        
+
+        marker_dd2617e250819bcdf194dd018e2681f9.bindPopup(popup_85d6d17a259ba669ff63c36d3ec935d2)
+        ;
+
+        
+    
+    
+            marker_dd2617e250819bcdf194dd018e2681f9.bindTooltip(
+                `<div>
+                     Infantil Chihuahua
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dd2617e250819bcdf194dd018e2681f9.setIcon(icon_844e32a57a0b79c8b7b73d3c9bfde93d);
+            
+    
+            var marker_2f9d7bf56e85ba9f5b03c7706e3dd4f2 = L.marker(
+                [19.702, -101.184],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_dc49cc9dffb29387023c8124fbebf5b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5ab71d8c68c77dccfb190f1ae93e0ced = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_415a6d7c6ece8e89517e604e1f575587 = $(`<div id="html_415a6d7c6ece8e89517e604e1f575587" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>Infantil Morelia Eva Sámano</b><br>Tipo: SS Estatal<br>Sector: Público<br>Estado: Michoacán<br>Dir: Bosque Cuauhtémoc s/n<br>Nivel: 2do<br>Sede formación: No</div></div>`)[0];
+                popup_5ab71d8c68c77dccfb190f1ae93e0ced.setContent(html_415a6d7c6ece8e89517e604e1f575587);
+            
+        
+
+        marker_2f9d7bf56e85ba9f5b03c7706e3dd4f2.bindPopup(popup_5ab71d8c68c77dccfb190f1ae93e0ced)
+        ;
+
+        
+    
+    
+            marker_2f9d7bf56e85ba9f5b03c7706e3dd4f2.bindTooltip(
+                `<div>
+                     Infantil Morelia Eva Sámano
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2f9d7bf56e85ba9f5b03c7706e3dd4f2.setIcon(icon_dc49cc9dffb29387023c8124fbebf5b8);
+            
+    
+            var marker_f32bccdd1c7a55f7d022bdfc092ecb83 = L.marker(
+                [20.115, -98.756],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_5edb16c34896cc924ff6c2da42aa5c53 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c0d6f5b7e0be2038cb4c71805a14bdca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fe4151df9a496643202026d9089a3f23 = $(`<div id="html_fe4151df9a496643202026d9089a3f23" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>Niño DIF Pachuca</b><br>Tipo: DIF<br>Sector: Público<br>Estado: Hidalgo<br>Dir: Ferrocarril Central s/n<br>Nivel: 2do<br>Sede formación: No</div></div>`)[0];
+                popup_c0d6f5b7e0be2038cb4c71805a14bdca.setContent(html_fe4151df9a496643202026d9089a3f23);
+            
+        
+
+        marker_f32bccdd1c7a55f7d022bdfc092ecb83.bindPopup(popup_c0d6f5b7e0be2038cb4c71805a14bdca)
+        ;
+
+        
+    
+    
+            marker_f32bccdd1c7a55f7d022bdfc092ecb83.bindTooltip(
+                `<div>
+                     Niño DIF Pachuca
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f32bccdd1c7a55f7d022bdfc092ecb83.setIcon(icon_5edb16c34896cc924ff6c2da42aa5c53);
+            
+    
+            var marker_c81f888f2b282257d4bc040d490dcf16 = L.marker(
+                [25.388, -100.97],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_d830e48226ce78556d59e4deaff83c4b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b01ab0230002433308d010cca40c76b7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b0f8751025f681c8db6807463b302e32 = $(`<div id="html_b0f8751025f681c8db6807463b302e32" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>Niño F.Gómez Santos Saltillo</b><br>Tipo: SS Estatal<br>Sector: Público<br>Estado: Coahuila<br>Dir: Colosio y Periférico<br>Nivel: 2do<br>Sede formación: No</div></div>`)[0];
+                popup_b01ab0230002433308d010cca40c76b7.setContent(html_b0f8751025f681c8db6807463b302e32);
+            
+        
+
+        marker_c81f888f2b282257d4bc040d490dcf16.bindPopup(popup_b01ab0230002433308d010cca40c76b7)
+        ;
+
+        
+    
+    
+            marker_c81f888f2b282257d4bc040d490dcf16.bindTooltip(
+                `<div>
+                     Niño F.Gómez Santos Saltillo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c81f888f2b282257d4bc040d490dcf16.setIcon(icon_d830e48226ce78556d59e4deaff83c4b);
+            
+    
+            var marker_d7b6db3cd64577cec36e58e47c291fca = L.marker(
+                [20.569, -100.402],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_09cd1cf461edf445b5119f9304d8302c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_039bc013956b73328ecd72877fde6215 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d5bef4e79885b3eb0da6ed1b361790fa = $(`<div id="html_d5bef4e79885b3eb0da6ed1b361790fa" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>Niño y Adolescente Querétaro</b><br>Tipo: SS Estatal<br>Sector: Público<br>Estado: Querétaro<br>Dir: Av. de la Luz s/n<br>Nivel: 2do<br>Sede formación: No</div></div>`)[0];
+                popup_039bc013956b73328ecd72877fde6215.setContent(html_d5bef4e79885b3eb0da6ed1b361790fa);
+            
+        
+
+        marker_d7b6db3cd64577cec36e58e47c291fca.bindPopup(popup_039bc013956b73328ecd72877fde6215)
+        ;
+
+        
+    
+    
+            marker_d7b6db3cd64577cec36e58e47c291fca.bindTooltip(
+                `<div>
+                     Niño y Adolescente Querétaro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d7b6db3cd64577cec36e58e47c291fca.setIcon(icon_09cd1cf461edf445b5119f9304d8302c);
+            
+    
+            var marker_77e338863fb4906dc4f2f1da2825a187 = L.marker(
+                [19.31, -98.24],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_352ae98b55420caf45204d0b0ec08ddd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e8f306e312eb671f89d052137e3b5a58 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7cf9d5812dc52cf3595366e427516389 = $(`<div id="html_7cf9d5812dc52cf3595366e427516389" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>Infantil Tlaxcala</b><br>Tipo: SS Estatal<br>Sector: Público<br>Estado: Tlaxcala<br>Dir: Carr. S.M.Texmelucan Km2.5<br>Nivel: 2do<br>Sede formación: No</div></div>`)[0];
+                popup_e8f306e312eb671f89d052137e3b5a58.setContent(html_7cf9d5812dc52cf3595366e427516389);
+            
+        
+
+        marker_77e338863fb4906dc4f2f1da2825a187.bindPopup(popup_e8f306e312eb671f89d052137e3b5a58)
+        ;
+
+        
+    
+    
+            marker_77e338863fb4906dc4f2f1da2825a187.bindTooltip(
+                `<div>
+                     Infantil Tlaxcala
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_77e338863fb4906dc4f2f1da2825a187.setIcon(icon_352ae98b55420caf45204d0b0ec08ddd);
+            
+    
+            var marker_03576a335339b8ff4d57ef30eec9e21f = L.marker(
+                [25.688, -100.345],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_0a4c664afcdf20c74e4edea0abcdf051 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e6de7203fa1397af44e1e55c78bdb6ee = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d0bf78b705a70da5c05f0a68f79cdea4 = $(`<div id="html_d0bf78b705a70da5c05f0a68f79cdea4" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>Hosp. Universitario UANL</b><br>Tipo: Universitario<br>Sector: Público<br>Estado: N.León<br>Dir: Madero y Gonzalitos<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_e6de7203fa1397af44e1e55c78bdb6ee.setContent(html_d0bf78b705a70da5c05f0a68f79cdea4);
+            
+        
+
+        marker_03576a335339b8ff4d57ef30eec9e21f.bindPopup(popup_e6de7203fa1397af44e1e55c78bdb6ee)
+        ;
+
+        
+    
+    
+            marker_03576a335339b8ff4d57ef30eec9e21f.bindTooltip(
+                `<div>
+                     Hosp. Universitario UANL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_03576a335339b8ff4d57ef30eec9e21f.setIcon(icon_0a4c664afcdf20c74e4edea0abcdf051);
+            
+    
+            var marker_039fc5a7e9592ea9fa9e1a1ffb2f6fb6 = L.marker(
+                [19.457, -99.219],
+                {
+}
+            ).addTo(feature_group_07c2a00df14fbe389196f532a56ef86f);
+        
+    
+            var icon_90bceb852f2430e233f393e197eec462 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1abe78617ce670a2db66735d5b0a5511 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9a812a44c22fd44e250b965316109f0e = $(`<div id="html_9a812a44c22fd44e250b965316109f0e" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>Hospital Central Militar</b><br>Tipo: SEDENA<br>Sector: Público<br>Estado: CDMX<br>Dir: Ávila Camacho s/n<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_1abe78617ce670a2db66735d5b0a5511.setContent(html_9a812a44c22fd44e250b965316109f0e);
+            
+        
+
+        marker_039fc5a7e9592ea9fa9e1a1ffb2f6fb6.bindPopup(popup_1abe78617ce670a2db66735d5b0a5511)
+        ;
+
+        
+    
+    
+            marker_039fc5a7e9592ea9fa9e1a1ffb2f6fb6.bindTooltip(
+                `<div>
+                     Hospital Central Militar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_039fc5a7e9592ea9fa9e1a1ffb2f6fb6.setIcon(icon_90bceb852f2430e233f393e197eec462);
+            
+    
+            feature_group_07c2a00df14fbe389196f532a56ef86f.addTo(map_b3891d75640368eb773cf0a7d9c714e8);
+        
+    
+            var feature_group_617934b8bb8cf2eb42eb64aeff9bf99a = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_5155e03270afc5e613183e546109f00a = L.marker(
+                [19.393, -99.198],
+                {
+}
+            ).addTo(feature_group_617934b8bb8cf2eb42eb64aeff9bf99a);
+        
+    
+            var icon_4fd2914f1b05bf2644b048a6293e8f0f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_035b0234e4635b55e0db9173b94bda48 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e74cfad26b55c2a97d065623bf7a0686 = $(`<div id="html_e74cfad26b55c2a97d065623bf7a0686" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>ABC Observatorio</b><br>Tipo: Privado<br>Sector: Privado<br>Estado: CDMX<br>Dir: Sur 136 No. 116<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_035b0234e4635b55e0db9173b94bda48.setContent(html_e74cfad26b55c2a97d065623bf7a0686);
+            
+        
+
+        marker_5155e03270afc5e613183e546109f00a.bindPopup(popup_035b0234e4635b55e0db9173b94bda48)
+        ;
+
+        
+    
+    
+            marker_5155e03270afc5e613183e546109f00a.bindTooltip(
+                `<div>
+                     ABC Observatorio
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5155e03270afc5e613183e546109f00a.setIcon(icon_4fd2914f1b05bf2644b048a6293e8f0f);
+            
+    
+            var marker_ff3eade69c25cf26ffdb68a37e96b80b = L.marker(
+                [19.369, -99.262],
+                {
+}
+            ).addTo(feature_group_617934b8bb8cf2eb42eb64aeff9bf99a);
+        
+    
+            var icon_26d831bda5be9c3b8db2ec2ec53a5f50 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_72caf4986227a154fef654f3552776d1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_34e40a73eac40d45aaaa7fc9e5f752a8 = $(`<div id="html_34e40a73eac40d45aaaa7fc9e5f752a8" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>ABC Santa Fe</b><br>Tipo: Privado<br>Sector: Privado<br>Estado: CDMX<br>Dir: C. Graef Fernández 154<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_72caf4986227a154fef654f3552776d1.setContent(html_34e40a73eac40d45aaaa7fc9e5f752a8);
+            
+        
+
+        marker_ff3eade69c25cf26ffdb68a37e96b80b.bindPopup(popup_72caf4986227a154fef654f3552776d1)
+        ;
+
+        
+    
+    
+            marker_ff3eade69c25cf26ffdb68a37e96b80b.bindTooltip(
+                `<div>
+                     ABC Santa Fe
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ff3eade69c25cf26ffdb68a37e96b80b.setIcon(icon_26d831bda5be9c3b8db2ec2ec53a5f50);
+            
+    
+            var marker_ed7a17a8d86f6694bb98ac73902243c0 = L.marker(
+                [19.311, -99.164],
+                {
+}
+            ).addTo(feature_group_617934b8bb8cf2eb42eb64aeff9bf99a);
+        
+    
+            var icon_7f7e0f00ec51768eb40e0e1679875d2e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0941b2bdd54ded3db365495660c8125c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_15259edb3dc78c7ab4c6a3fa81c8c34f = $(`<div id="html_15259edb3dc78c7ab4c6a3fa81c8c34f" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>Médica Sur</b><br>Tipo: Privado<br>Sector: Privado<br>Estado: CDMX<br>Dir: Puente de Piedra 150<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_0941b2bdd54ded3db365495660c8125c.setContent(html_15259edb3dc78c7ab4c6a3fa81c8c34f);
+            
+        
+
+        marker_ed7a17a8d86f6694bb98ac73902243c0.bindPopup(popup_0941b2bdd54ded3db365495660c8125c)
+        ;
+
+        
+    
+    
+            marker_ed7a17a8d86f6694bb98ac73902243c0.bindTooltip(
+                `<div>
+                     Médica Sur
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ed7a17a8d86f6694bb98ac73902243c0.setIcon(icon_7f7e0f00ec51768eb40e0e1679875d2e);
+            
+    
+            var marker_f19db59faed05007f8f455af1550b6b8 = L.marker(
+                [19.437, -99.186],
+                {
+}
+            ).addTo(feature_group_617934b8bb8cf2eb42eb64aeff9bf99a);
+        
+    
+            var icon_c4b5332f40ba794eaf508da5211ef46d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b7275edcc6b99e53600e90463e07ebb9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3c6836ec005e667a040d080235e25f66 = $(`<div id="html_3c6836ec005e667a040d080235e25f66" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>Hospital Español</b><br>Tipo: Privado<br>Sector: Privado<br>Estado: CDMX<br>Dir: Ejército Nacional 613<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_b7275edcc6b99e53600e90463e07ebb9.setContent(html_3c6836ec005e667a040d080235e25f66);
+            
+        
+
+        marker_f19db59faed05007f8f455af1550b6b8.bindPopup(popup_b7275edcc6b99e53600e90463e07ebb9)
+        ;
+
+        
+    
+    
+            marker_f19db59faed05007f8f455af1550b6b8.bindTooltip(
+                `<div>
+                     Hospital Español
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f19db59faed05007f8f455af1550b6b8.setIcon(icon_c4b5332f40ba794eaf508da5211ef46d);
+            
+    
+            var marker_7983d5f9563a212c05f8482ab1e7e053 = L.marker(
+                [19.31, -99.221],
+                {
+}
+            ).addTo(feature_group_617934b8bb8cf2eb42eb64aeff9bf99a);
+        
+    
+            var icon_b96d3919c9e9cde15f9a0344729dd5f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_90b6dd67fb0f1fa8b4e5d687d119b434 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b0031a45624eb124e55f1c27e0037aca = $(`<div id="html_b0031a45624eb124e55f1c27e0037aca" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>Ángeles Pedregal</b><br>Tipo: Privado<br>Sector: Privado<br>Estado: CDMX<br>Dir: Sta. Teresa 1055<br>Nivel: 3er<br>Sede formación: No</div></div>`)[0];
+                popup_90b6dd67fb0f1fa8b4e5d687d119b434.setContent(html_b0031a45624eb124e55f1c27e0037aca);
+            
+        
+
+        marker_7983d5f9563a212c05f8482ab1e7e053.bindPopup(popup_90b6dd67fb0f1fa8b4e5d687d119b434)
+        ;
+
+        
+    
+    
+            marker_7983d5f9563a212c05f8482ab1e7e053.bindTooltip(
+                `<div>
+                     Ángeles Pedregal
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7983d5f9563a212c05f8482ab1e7e053.setIcon(icon_b96d3919c9e9cde15f9a0344729dd5f2);
+            
+    
+            var marker_817132a1f9b38ca5e877579c3aa370ec = L.marker(
+                [19.349, -99.171],
+                {
+}
+            ).addTo(feature_group_617934b8bb8cf2eb42eb64aeff9bf99a);
+        
+    
+            var icon_fa2b16500a1d1598d1d5dcf1629cd175 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f310f69272f4fd7f1a277228ac60445a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c62ffebb29ae3572889be26138540ef6 = $(`<div id="html_c62ffebb29ae3572889be26138540ef6" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>Star Médica Infantil</b><br>Tipo: Privado<br>Sector: Privado<br>Estado: CDMX<br>Dir: Cerro del Vigía 7<br>Nivel: 2do<br>Sede formación: No</div></div>`)[0];
+                popup_f310f69272f4fd7f1a277228ac60445a.setContent(html_c62ffebb29ae3572889be26138540ef6);
+            
+        
+
+        marker_817132a1f9b38ca5e877579c3aa370ec.bindPopup(popup_f310f69272f4fd7f1a277228ac60445a)
+        ;
+
+        
+    
+    
+            marker_817132a1f9b38ca5e877579c3aa370ec.bindTooltip(
+                `<div>
+                     Star Médica Infantil
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_817132a1f9b38ca5e877579c3aa370ec.setIcon(icon_fa2b16500a1d1598d1d5dcf1629cd175);
+            
+    
+            var marker_1c15b3330d476898728007d5ccbb9ae7 = L.marker(
+                [25.653, -100.286],
+                {
+}
+            ).addTo(feature_group_617934b8bb8cf2eb42eb64aeff9bf99a);
+        
+    
+            var icon_aba2112890d642f5204868ddf3850b08 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b29b349de9fc54820013c07829ad6601 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6d4850e85d0d9691db745285d9914b78 = $(`<div id="html_6d4850e85d0d9691db745285d9914b78" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>San José TecSalud</b><br>Tipo: Privado<br>Sector: Privado<br>Estado: N.León<br>Dir: Morones Prieto 3000<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_b29b349de9fc54820013c07829ad6601.setContent(html_6d4850e85d0d9691db745285d9914b78);
+            
+        
+
+        marker_1c15b3330d476898728007d5ccbb9ae7.bindPopup(popup_b29b349de9fc54820013c07829ad6601)
+        ;
+
+        
+    
+    
+            marker_1c15b3330d476898728007d5ccbb9ae7.bindTooltip(
+                `<div>
+                     San José TecSalud
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1c15b3330d476898728007d5ccbb9ae7.setIcon(icon_aba2112890d642f5204868ddf3850b08);
+            
+    
+            var marker_f8a37183003f6eb37790cf13a71ea76f = L.marker(
+                [25.652, -100.348],
+                {
+}
+            ).addTo(feature_group_617934b8bb8cf2eb42eb64aeff9bf99a);
+        
+    
+            var icon_924b63a26c8435c249e6e159ee35204a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f1eb6e83b5ca27b6f6ecc4ba3fb07f21 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9b29370d30ce2d377a093279971f4416 = $(`<div id="html_9b29370d30ce2d377a093279971f4416" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:260px;'><b>Zambrano Hellion TecSalud</b><br>Tipo: Privado<br>Sector: Privado<br>Estado: N.León<br>Dir: San Patricio 112<br>Nivel: 3er<br>Sede formación: Sí</div></div>`)[0];
+                popup_f1eb6e83b5ca27b6f6ecc4ba3fb07f21.setContent(html_9b29370d30ce2d377a093279971f4416);
+            
+        
+
+        marker_f8a37183003f6eb37790cf13a71ea76f.bindPopup(popup_f1eb6e83b5ca27b6f6ecc4ba3fb07f21)
+        ;
+
+        
+    
+    
+            marker_f8a37183003f6eb37790cf13a71ea76f.bindTooltip(
+                `<div>
+                     Zambrano Hellion TecSalud
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f8a37183003f6eb37790cf13a71ea76f.setIcon(icon_924b63a26c8435c249e6e159ee35204a);
+            
+    
+            feature_group_617934b8bb8cf2eb42eb64aeff9bf99a.addTo(map_b3891d75640368eb773cf0a7d9c714e8);
+        
+    
+            var layer_control_bfc6d82cc602d02ae6654bd4c751448b_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_b656a616a72cdaa5fa4ce9bedeb80f0f,
+                },
+                overlays :  {
+                    "Sector P\u00fablico" : feature_group_07c2a00df14fbe389196f532a56ef86f,
+                    "Sector Privado" : feature_group_617934b8bb8cf2eb42eb64aeff9bf99a,
+                },
+            };
+            let layer_control_bfc6d82cc602d02ae6654bd4c751448b = L.control.layers(
+                layer_control_bfc6d82cc602d02ae6654bd4c751448b_layers.base_layers,
+                layer_control_bfc6d82cc602d02ae6654bd4c751448b_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_b3891d75640368eb773cf0a7d9c714e8);
+
+        
+    
+            var locate_control_df7309e885d8831cfa0d2e1f9a60d511 = L.control.locate(
+                {"strings": {"title": "Mi ubicaci\u00f3n"}}
+            ).addTo(map_b3891d75640368eb773cf0a7d9c714e8);
+            
+        
+    
+            var measure_control_bff69bbdf0320ea84ad9a4d86a3e32b3 = new L.Control.Measure(
+                {
+  "position": "topright",
+  "primaryLengthUnit": "kilometers",
+  "secondaryLengthUnit": "miles",
+  "primaryAreaUnit": "sqmeters",
+  "secondaryAreaUnit": "acres",
+});
+            map_b3891d75640368eb773cf0a7d9c714e8.addControl(measure_control_bff69bbdf0320ea84ad9a4d86a3e32b3);
+
+            // Workaround for using this plugin with Leaflet>=1.8.0
+            // https://github.com/ljagis/leaflet-measure/issues/171
+            L.Control.Measure.include({
+                _setCaptureMarkerIcon: function () {
+                    // disable autopan
+                    this._captureMarker.options.autoPanOnFocus = false;
+                    // default function
+                    this._captureMarker.setIcon(
+                        L.divIcon({
+                            iconSize: this._map.getSize().multiplyBy(2)
+                        })
+                    );
+                },
+            });
+
+        
+    
+            tile_layer_b656a616a72cdaa5fa4ce9bedeb80f0f.addTo(map_b3891d75640368eb773cf0a7d9c714e8);
+        
+    
+                marker_4dd9362aa28c19d5cae10bac1a074de2.setIcon(icon_ec74fb9b20265f0e843a649277b2cd7a);
+            
+    
+                marker_52702e9d72140dbcf007241ca4390532.setIcon(icon_2268282b81179af59458ceca05891d4d);
+            
+    
+                marker_6775774b124a1f4725c50dd91a92c6e7.setIcon(icon_fd7d6944f0c6675e0b7bbe99648cac0a);
+            
+    
+                marker_1e1d9463871fbc3be979cc0c8d8919d8.setIcon(icon_a469991b67f3c5fda86c72d35e4f95e9);
+            
+    
+                marker_12cf1a0bd1ab2ee5d7db6d7f0762b718.setIcon(icon_a2f9f06f070da3105bbdf4ef5e0e1dd1);
+            
+    
+                marker_94581079acaf75564cf80f1865c7582f.setIcon(icon_03f301027f17dc634279603b9787bea4);
+            
+    
+                marker_9b4390e7e7482c700f32ac4d2781c363.setIcon(icon_eee21eef596fea9a069ab47724a10ce3);
+            
+    
+                marker_ab195fc612949b46b8867771cfd3c1f1.setIcon(icon_aabdddde3a56939526e984e8f1da2744);
+            
+    
+                marker_bcb57b7c482d6320e1ab66250653f28f.setIcon(icon_c39f11e929bc7d53fe0e38b490bd6760);
+            
+    
+                marker_3470e81088bd7d9fb25db13464e324d9.setIcon(icon_b8a137e9b75e0c763b784da24f94f5c6);
+            
+    
+                marker_f236328636bdcdcd5b9a96fcd1bd254f.setIcon(icon_2b3e9580031523feccb41b91abcb4909);
+            
+    
+                marker_f68207dbe8f8074b1c4f29366b8c3214.setIcon(icon_67536fca6cecb9d4fa5ab37c4531bf53);
+            
+    
+                marker_fbc47795f731f3de30245c89a8428b70.setIcon(icon_4f988df04c5766c8c8cfd6c71b9fd09a);
+            
+    
+                marker_210af0fbad1bcf8e32c39590dd24f7f6.setIcon(icon_ae6dfa280f7278fa0e46bfc3d3862e18);
+            
+    
+                marker_d9d74dd1a7cdfc87f49dc0e93b6348e8.setIcon(icon_c913e11b3aced0892e57daf54953545b);
+            
+    
+                marker_91e0caf192ba128cebe10ba02143130d.setIcon(icon_1a6d1dfbbb4b49d9981d5f125fde934b);
+            
+    
+                marker_da37b07023dad9704aaa9c4ec2f61d13.setIcon(icon_3e84bca74437d4fad82e0b6fb0e9d538);
+            
+    
+                marker_afcac80abc79dcd81771f1379e479789.setIcon(icon_669b19567dda256a9588877bf23f4561);
+            
+    
+                marker_b9690036b6f170f0c9fdee4303bf3e3f.setIcon(icon_7716476065097c8575f76053565d699f);
+            
+    
+                marker_f5023a864e0d656a2916739235ef301f.setIcon(icon_06aa4fb7fd901601465889554f79f020);
+            
+    
+                marker_76a4630c411138919faf37c5cddcda2b.setIcon(icon_68cc36f3b4165195f15fe76eccefb922);
+            
+    
+                marker_6ddf977470bcf1dc20021476a8481962.setIcon(icon_c672810f5f0fd70af5c9abf87ba6003b);
+            
+    
+                marker_c0d5acd425e822923fe059e23f105765.setIcon(icon_67a6eff2c0910829c0d57fbec6f72ce9);
+            
+    
+                marker_c6c74de299fa8a67691c4e3ef4b1d74b.setIcon(icon_d19d67ab69d6b595f26383e8328d5ade);
+            
+    
+                marker_2593cff822ced01738b43aa0dc78440e.setIcon(icon_6caa09644aa0b5fab57a8a8bbf12017c);
+            
+    
+                marker_3379cf6611c4f5d70d350ae77e17ab3a.setIcon(icon_935453730cdf31d18410ab5e66c26bb0);
+            
+    
+                marker_ffeaf79fca58659ed74ac983f9639ed1.setIcon(icon_a767b3c9a50a44db3860dc7beb0e1cc0);
+            
+    
+                marker_8f9d8b4b82a0e735c593c563027a60d7.setIcon(icon_65f1eca3b8db8a24e618dab74b3c5a1e);
+            
+    
+                marker_d4bf61d0e1e528e2a27f0d83c16354d8.setIcon(icon_34b765f21c5663ff21c6d0ec7192484e);
+            
+    
+                marker_dd2617e250819bcdf194dd018e2681f9.setIcon(icon_844e32a57a0b79c8b7b73d3c9bfde93d);
+            
+    
+                marker_2f9d7bf56e85ba9f5b03c7706e3dd4f2.setIcon(icon_dc49cc9dffb29387023c8124fbebf5b8);
+            
+    
+                marker_f32bccdd1c7a55f7d022bdfc092ecb83.setIcon(icon_5edb16c34896cc924ff6c2da42aa5c53);
+            
+    
+                marker_c81f888f2b282257d4bc040d490dcf16.setIcon(icon_d830e48226ce78556d59e4deaff83c4b);
+            
+    
+                marker_d7b6db3cd64577cec36e58e47c291fca.setIcon(icon_09cd1cf461edf445b5119f9304d8302c);
+            
+    
+                marker_77e338863fb4906dc4f2f1da2825a187.setIcon(icon_352ae98b55420caf45204d0b0ec08ddd);
+            
+    
+                marker_03576a335339b8ff4d57ef30eec9e21f.setIcon(icon_0a4c664afcdf20c74e4edea0abcdf051);
+            
+    
+                marker_039fc5a7e9592ea9fa9e1a1ffb2f6fb6.setIcon(icon_90bceb852f2430e233f393e197eec462);
+            
+    
+            feature_group_07c2a00df14fbe389196f532a56ef86f.addTo(map_b3891d75640368eb773cf0a7d9c714e8);
+        
+    
+                marker_5155e03270afc5e613183e546109f00a.setIcon(icon_4fd2914f1b05bf2644b048a6293e8f0f);
+            
+    
+                marker_ff3eade69c25cf26ffdb68a37e96b80b.setIcon(icon_26d831bda5be9c3b8db2ec2ec53a5f50);
+            
+    
+                marker_ed7a17a8d86f6694bb98ac73902243c0.setIcon(icon_7f7e0f00ec51768eb40e0e1679875d2e);
+            
+    
+                marker_f19db59faed05007f8f455af1550b6b8.setIcon(icon_c4b5332f40ba794eaf508da5211ef46d);
+            
+    
+                marker_7983d5f9563a212c05f8482ab1e7e053.setIcon(icon_b96d3919c9e9cde15f9a0344729dd5f2);
+            
+    
+                marker_817132a1f9b38ca5e877579c3aa370ec.setIcon(icon_fa2b16500a1d1598d1d5dcf1629cd175);
+            
+    
+                marker_1c15b3330d476898728007d5ccbb9ae7.setIcon(icon_aba2112890d642f5204868ddf3850b08);
+            
+    
+                marker_f8a37183003f6eb37790cf13a71ea76f.setIcon(icon_924b63a26c8435c249e6e159ee35204a);
+            
+    
+            feature_group_617934b8bb8cf2eb42eb64aeff9bf99a.addTo(map_b3891d75640368eb773cf0a7d9c714e8);
+        
+</script>
+</html>
